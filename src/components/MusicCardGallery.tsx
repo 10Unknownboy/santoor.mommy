@@ -6,14 +6,14 @@ const MusicCardGallery: React.FC = () => {
   const musicMemories = [
     {
       image: '/files/database/images/memory1.jpg',
-      title: 'O Rangrez',
-      artist: 'Wajid Ali',
+      title: 'Reflections',
+      artist: 'The Neighborhood',
       localAudioSrc: '/files/database/songs/song1.mp3'
     },
     {
       image: '/files/database/images/memory2.jpg',
-      title: 'Mi Amor',
-      artist: 'The Paul',
+      title: 'Double Take',
+      artist: 'Dhruv',
       localAudioSrc: '/files/database/songs/song2.mp3'
     },
     {
