@@ -6,38 +6,38 @@ const MusicCardGallery: React.FC = () => {
   const musicMemories = [
     {
       image: '/files/database/images/memory1.jpg',
-      title: 'Reflections',
-      artist: 'The Neighborhood',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song1.mp3'
     },
     {
       image: '/files/database/images/memory2.jpg',
-      title: 'Double Take',
-      artist: 'Dhruv',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song2.mp3'
     },
     {
       image: '/files/database/images/memory3.jpg',
-      title: 'Finding Her',
-      artist: 'Kushagra',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song3.mp3'
     },
     {
       image: '/files/database/images/memory4.jpg',
-      title: 'Thum Tak',
-      artist: 'A.R. Rahman',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song4.mp3'
     },
     {
       image: '/files/database/images/memory5.jpg',
-      title: 'Lofi Lovee',
-      artist: 'Ved Sharma',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song5.mp3'
     },
     {
       image: '/files/database/images/memory6.jpg',
-      title: 'Jhol',
-      artist: 'Mannu',
+      title: 'Song',
+      artist: 'Artist',
       localAudioSrc: '/files/database/songs/song6.mp3'
     }
   ];
