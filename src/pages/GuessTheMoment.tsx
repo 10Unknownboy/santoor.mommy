@@ -11,75 +11,92 @@ const GuessTheMoment: React.FC = () => {
   const [gameComplete, setGameComplete] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
 
-const loveQuestions = [
-  {
-    question: "What is xyz’s favourite way to say I love you?",
-    options: ["With a hug", "With a text", "With a call", "With a gift"],
-    correct: 0,
-    emoji: "💖"
-  },
-  {
-    question: "Where did xyz first meet?",
-    options: ["At school", "Online", "Cafe", "Park"],
-    correct: 0,
-    emoji: "📍"
-  },
-  {
-    question: "Who is more likely to plan a romantic date?",
-    options: ["xyz", "Partner", "Both equally", "Depends on mood"],
-    correct: 0,
-    emoji: "🌹"
-  },
-  {
-    question: "What’s xyz’s favourite song to dedicate?",
-    options: ["Perfect by Ed Sheeran", "Closer by Chainsmokers", "Shape of You", "Love Me Like You Do"],
-    correct: 0,
-    emoji: "🎶"
-  },
-  {
-    question: "Who says ‘I miss you’ more often?",
-    options: ["xyz", "Partner", "Same", "Depends"],
-    correct: 0,
-    emoji: "💌"
-  },
-  {
-    question: "Which season do xyz enjoy together the most?",
-    options: ["Winter", "Summer", "Rainy", "Spring"],
-    correct: 0,
-    emoji: "❄️"
-  },
-  {
-    question: "Who is likely to write a love poem?",
-    options: ["xyz", "Partner", "Both", "Neither"],
-    correct: 0,
-    emoji: "📝"
-  },
-  {
-    question: "What’s their favourite couple activity?",
-    options: ["Stargazing", "Watching movies", "Cooking", "Traveling"],
-    correct: 0,
-    emoji: "🌠"
-  },
-  {
-    question: "Who initiates most video calls?",
-    options: ["xyz", "Partner", "Equal", "Rarely call"],
-    correct: 0,
-    emoji: "📞"
-  },
-  {
-    question: "Which pet name is used most?",
-    options: ["Love", "Cutie", "Darling", "Sweetheart"],
-    correct: 0,
-    emoji: "🐻"
-  },
-  {
-    question: "When do xyz feel closest?",
-    options: ["While sharing secrets", "On dates", "During arguments", "While laughing"],
-    correct: 0,
-    emoji: "🤗"
-  }
-];
+  const loveQuestions = [
+    {
+      question: "How much we have messaged in total?",
+      options: ["600,000", "150,000", "650,000", "400,000"],
+      correct: 2,
+      emoji: "💬"
+    },
+    {
+      question: "Which emoji we have used the most?",
+      options: ["♥", "😭", "🫠", "🙂"],
+      correct: 1,
+      emoji: "😭"
+    },
+    {
+      question: "Who uses more words per message?",
+      options: ["Billo", "Billu", "Equal"],
+      correct: 0,
+      emoji: "📝"
+    },
+    {
+      question: "Who has criticized more?",
+      options: ["Billu", "Billo", "Equal"],
+      correct: 2,
+      emoji: "🤔"
+    },
+    {
+      question: "Who has complimented more?",
+      options: ["Billo", "Billu", "Equal"],
+      correct: 1,
+      emoji: "🥰"
+    },
+    {
+      question: "Who has messaged more?",
+      options: ["Billo", "Billu", "Equal"],
+      correct: 0,
+      emoji: "📱"
+    },
+    {
+      question: "Most used word of Billo?",
+      options: ["Nhi", "kya", "By", "main"],
+      correct: 0,
+      emoji: "🗣️"
+    },
+    {
+      question: "Most used word of Billu?",
+      options: ["Nhi", "main", "sorry", "kyu"],
+      correct: 3,
+      emoji: "💭"
+    },
+    {
+      question: "Do we have same interest love?",
+      options: ["Yes", "No"],
+      correct: 1,
+      emoji: "🎯"
+    },
+    {
+      question: "Who is more supportive?",
+      options: ["Billu", "Billo"],
+      correct: 0,
+      emoji: "🤝"
+    },
+    {
+      question: "Advice for Billu in relationship that Billo wants to give?",
+      options: ["continue being supportive", "more openness to feelings", "have more patience", "I like him as he is!!"],
+      correct: 3,
+      emoji: "💝"
+    }
+  ];
 
+  const handleAnswer = (selectedIndex: number) => {
+    setSelectedAnswer(selectedIndex);
+    if (selectedIndex === loveQuestions[currentQuestion].correct) {
+      setScore(score + 1);
+    }
+    setShowAnswer(true);
+  };
+
+  const nextQuestion = () => {
+    if (currentQuestion < loveQuestions.length - 1) {
+      setCurrentQuestion(currentQuestion + 1);
+      setShowAnswer(false);
+      setSelectedAnswer(null);
+    } else {
+      setGameComplete(true);
+    }
+  };
 
   const resetGame = () => {
     setCurrentQuestion(0);
