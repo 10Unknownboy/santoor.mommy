@@ -26,37 +26,37 @@ const GuessTheMoment: React.FC = () => {
     },
     {
       question: "Who uses more words per message?",
-      options: ["Billo", "Billu", "Equal"],
+      options: ["xyz", "xyz", "Equal"],
       correct: 0,
       emoji: "📝"
     },
     {
       question: "Who has criticized more?",
-      options: ["Billu", "Billo", "Equal"],
+      options: ["xyz", "xyz", "Equal"],
       correct: 2,
       emoji: "🤔"
     },
     {
       question: "Who has complimented more?",
-      options: ["Billo", "Billu", "Equal"],
+      options: ["xyz", "xyz", "Equal"],
       correct: 1,
       emoji: "🥰"
     },
     {
       question: "Who has messaged more?",
-      options: ["Billo", "Billu", "Equal"],
+      options: ["xyz", "xyz", "Equal"],
       correct: 0,
       emoji: "📱"
     },
     {
-      question: "Most used word of Billo?",
-      options: ["Nhi", "kya", "By", "main"],
+      question: "Most used word of xyz?",
+      options: ["Hi", "Bye", "No", "shut up"],
       correct: 0,
       emoji: "🗣️"
     },
     {
-      question: "Most used word of Billu?",
-      options: ["Nhi", "main", "sorry", "kyu"],
+      question: "Most used word of xyz?",
+      options: ["YOO", "damnn", "sorry", "love you"],
       correct: 3,
       emoji: "💭"
     },
@@ -68,12 +68,12 @@ const GuessTheMoment: React.FC = () => {
     },
     {
       question: "Who is more supportive?",
-      options: ["Billu", "Billo"],
+      options: ["xyz", "xyz"],
       correct: 0,
       emoji: "🤝"
     },
     {
-      question: "Advice for Billu in relationship that Billo wants to give?",
+      question: "Advice for xyz in relationship that xyz wants to give?",
       options: ["continue being supportive", "more openness to feelings", "have more patience", "I like him as he is!!"],
       correct: 3,
       emoji: "💝"
