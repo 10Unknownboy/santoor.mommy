@@ -69,7 +69,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
     >
       💕
     </div>
-  ));
+  )
 
   return (
     <div className="min-h-screen bg-love-gradient flex items-center justify-center relative overflow-hidden">
