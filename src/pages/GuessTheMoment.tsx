@@ -13,7 +13,7 @@ const GuessTheMoment: React.FC = () => {
 
   const loveQuestions = [
     {
-      question: "How much we have messaged in total?",
+      question: "How much we have texted in total?",
       options: ["600,000", "150,000", "650,000", "400,000"],
       correct: 2,
       emoji: "💬"
