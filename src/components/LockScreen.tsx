@@ -24,7 +24,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
         const transcript = event.results[current][0].transcript.toLowerCase().trim();
         setTranscript(transcript);
         
-        if (transcript.includes('i love u')) {
+        if (transcript.includes('i love you')) {
           setIsListening(false);
           recognition.stop();
           setTimeout(() => {
@@ -69,7 +69,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
     >
       💕
     </div>
-  )
+  ));
 
   return (
     <div className="min-h-screen bg-love-gradient flex items-center justify-center relative overflow-hidden">
@@ -123,7 +123,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
           )}
         </div>
         <p className="text-love-500 mt-6 text-sm">
-          Made with Love
+          Made with love
         </p>
       </div>
     </div>
