@@ -123,7 +123,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
           )}
         </div>
         <p className="text-love-500 mt-6 text-sm">
-        
+          Made with Love
         </p>
       </div>
     </div>
