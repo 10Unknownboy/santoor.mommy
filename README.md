@@ -20,7 +20,7 @@ Wanna go full dev-mode on your laptop? Here’s how:
 
 ```sh
 # 🐑 Step 1: Clone this baby to your machine.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/10Unknownboy/santoor.mommy.git
 
 # 📁 Step 2: Jump into the project folder.
 cd <YOUR_PROJECT_NAME>
