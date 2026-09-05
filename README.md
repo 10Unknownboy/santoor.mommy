@@ -23,7 +23,7 @@ Wanna go full dev-mode on your laptop? Here’s how:
 git clone https://github.com/10Unknownboy/santoor.mommy.git
 
 # 📁 Step 2: Jump into the project folder.
-cd <YOUR_PROJECT_NAME>
+cd santoor.mommy
 
 # 📦 Step 3: Install the goodies (dependencies).
 npm i
